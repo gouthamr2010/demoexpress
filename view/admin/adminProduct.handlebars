@@ -1,0 +1,24 @@
+<main>
+    <h3>List of products</h3>
+    <div class="grid-container">
+        {{#each products}}
+        <div>
+            <div class="grid-box">
+                {{this.title}}
+                <img src="/images/Book.jpeg" />
+                <span class="mediumFont">Price: Rs {{this.price}} </span>
+                <br />
+                <span class="mediumFont trauncateText">{{this.description}}</span>
+                <br />
+                <form action="/admin/edit-product/{{this.id}}" method="GET">
+                    <button class="submitbutton" type="submit">Edit</button>
+                </form>
+                <form action="/admin/delete-product" method="POST">
+                    <input type="hidden" name="id" value="{{this.id}}" />
+                    <button class="submitbutton" type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</main>

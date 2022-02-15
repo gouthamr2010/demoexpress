@@ -1,0 +1,25 @@
+<main>
+    <form action="/admin/edit-product" method="POST">
+        <div>
+            <label for="title">ID</label>
+            <br />
+            <input class="inputbox" readonly="true" type="number" id="id" name="id" value="{{this.id}}">
+        </div>
+        <div>
+            <label for="title">Title</label>
+            <br />
+            <input class="inputbox" type="text" id="title" name="title" value="{{this.title}}">
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <br />
+            <input class="inputbox" type="number" id="price" name="price" value="{{this.price}}">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <br />
+            <textarea class="inputbox" id="description" name="description" rows="6">{{this.description}}</textarea>
+        </div>
+        <button class="submitbutton" type="submit">Update</button>
+    </form>
+</main>

@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+main {
+  margin: 1rem;
+}
+
+.inputbox {
+  width: 40%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submitbutton {
+  font-size: medium;
+  background-color: darkcyan;
+  padding: 8px;
+  border-radius: 2px;
+  margin: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+  border-style: outset;
+  border-radius: 8px;
+  border-width: 5px;
+  border-color: darkcyan;
+  width: 15rem;
+}
+
+.grid-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  font-size: larger;
+  margin: 10px;
+  text-align: center;
+}
+
+img {
+  width: 12rem;
+  height: 10rem;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.mediumFont {
+  font-size: medium;
+}
+
+.trauncateText {
+  height: 6rem;
+  overflow-y: clip;
+}
+
+.showProduct {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
