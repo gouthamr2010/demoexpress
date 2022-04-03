@@ -1,0 +1,14 @@
+<main>
+    <div>
+        {{#each products}}
+        <div class="flexContainerCart">
+            <img class="imageCart" src="/images/Book.jpeg" />
+            <div>
+                <div>{{this.title}}</div>
+                <span class="mediumFont">Price: Rs {{this.price}} </span>
+            </div>
+            <input class="inputboxCart" type="number" value="{{this.quantity}}" />
+        </div>
+        {{/each}}
+    </div>
+</main>

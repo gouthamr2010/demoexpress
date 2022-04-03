@@ -7,14 +7,15 @@
                 {{this.title}}
                 <img src="/images/Book.jpeg" />
                 <span class="mediumFont">Price: Rs {{this.price}} </span>
-                <br/>
+                <br />
                 <span class="mediumFont trauncateText">{{this.description}}</span>
-                <br/>
+                <br />
                 <form action="/product/{{this.id}}" method="GET">
                     <button class="submitbutton" type="submit">Details</button>
                 </form>
-                <br/>
-                <form>
+                <br />
+                <form action="/addToCart" method="POST">
+                    <input type="hidden" name="productId" value="{{this.id}}" />
                     <button class="submitbutton" type="submit">Add to Cart</button>
                 </form>
             </div>

@@ -21,7 +21,7 @@ exports.showProducts = (req, res, next) => {
 exports.showProduct = (req, res, next) => {
   let id = parseInt(req.params.productId);
   Product.findByPk(id).then((product) => {
-    res.render("admin/edit-product", {
+    res.render("shop/product", {
       pageTitle: "Product",
       id: product.id,
       title: product.title,

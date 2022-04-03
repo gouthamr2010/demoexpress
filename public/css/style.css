@@ -40,6 +40,15 @@ main {
   box-sizing: border-box;
 }
 
+.inputboxCart {
+  width: 10%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 .submitbutton {
   font-size: medium;
   background-color: darkcyan;
@@ -56,7 +65,7 @@ main {
   align-items: center;
 }
 
-.grid-container > div {
+.grid-container>div {
   padding: 20px 0;
   border-style: outset;
   border-radius: 8px;
@@ -96,4 +105,20 @@ img {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+}
+
+.flexContainerCart {
+  display: flex;
+  border: solid 5px darkcyan;
+  align-content: stretch;
+  justify-content: space-around;
+  margin: 10px 20rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.imageCart {
+  width: 4rem;
+  height: 4rem;
 }

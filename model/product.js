@@ -19,7 +19,7 @@ const Product = sequelize.define("Product", {
   description: {
     type: DataTypes.TEXT,
     allowNull: true,
-  },
+  }
 });
 
 module.exports = Product;
